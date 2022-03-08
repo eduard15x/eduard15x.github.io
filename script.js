@@ -31,3 +31,49 @@ btnNext.addEventListener('click', ()=> {
     };
     imgSlide.src = images[i];
 });
+
+
+//adding the logos to skills-section
+
+
+const logosKnown = [
+    {
+        'name' : 'HTML',
+        'src' : "/Logos/html.png"
+    },
+    {
+        'name' : 'CSS',
+        'src' : "/Logos/css.png"
+    },
+    {
+        'name' : 'JavaScript',
+        'src' : "/Logos/js.jpg"
+    },
+    {
+        'name' : 'GitHub',
+        'src' : "/Logos/github.png"
+    },
+];
+
+
+const logosToLearn = [
+    {
+        'name' : 'SQL Database',
+        'src' : "/Logos/sql.jpg"
+    },
+    {
+        'name' : 'ReactJS',
+        'src' : "/Logos/react.png"
+    },
+    {
+        'name' : 'NodeJS',
+        'src' : "/Logos/nodejs.png"
+    }
+];
+
+
+let pObj = document.getElementById('testp');
+let imgObj = document.getElementById('testimg');
+
+pObj = logosKnown[0].name;
+imgObj.src = logosKnown[0].src;

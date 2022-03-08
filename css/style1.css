@@ -35,6 +35,9 @@ header {
 #my-name-title {
     text-decoration: none;
     color: #4bdfb2;
+    border: 3px solid #4bdfb2;
+    border-radius: 50%;
+    padding: 4px;
     
 }
 
