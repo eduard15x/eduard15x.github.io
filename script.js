@@ -3,7 +3,9 @@
 const images = [
     "/photos/picture1.jfif",
     "/photos/picture2.jfif",
-    "/photos/picture3.jfif"
+    "/photos/picture3.jfif",
+    "/photos/picture4.jfif",
+    "/photos/picture5.jfif"
 ];
 
 const btnPrev = document.getElementById('btn-prev');
