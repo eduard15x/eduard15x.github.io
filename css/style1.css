@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+
+body {
+    background-color: rgb(255, 253, 249);
+}
+
+header {
+    position: sticky;
+    top: 0px; right: 0px; left: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    margin: auto;
+    background-color: #3a5555;
+    padding: 12px;
+    box-shadow: 0px 22px 15px -20px #4bdfb2;    
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#my-name-title {
+    text-decoration: none;
+    color: #4bdfb2;
+    
+}
+
+.navi-link {
+    margin: 0rem 25px 0rem 25px;
+    text-decoration: none;
+    color: #4bdfb2;
+}
+
+.navi-link:hover {
+    box-shadow: 1px 1px 10px 2px #4bdfb2;
+    background-color: #5e5e5e;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+.section-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 50px;
+    background-color: aliceblue;
+}
+
+#intro-title {
+    font-size: 30px;
+}
+.section-intro-content {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px;
+}
+
+.section-intro-one {
+    margin: 0px 100px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.section-intro-two {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(241, 240, 236, 0.801);
+    color: #2c2c2c;
+    margin: auto 100px;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    border: 1px solid none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 2px #69696b;
+}
+
+
+.section-intro-two div {
+    margin-top: 10px;
+}
+
+.intro-image {
+    max-width: 50%;
+}
+
+
+
+
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d5ebe3;
+    margin: 100px 50px;
+}
+
+#about-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-about-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 50px 0px;
+
+}
+
+.section-about-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 50px 0px;
+}
+
+
+.picture-me {
+    max-width: 50%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.prev-next {
+    padding: 6px 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d5ebe3;
+    margin: 100px 50px;
+}
+
+#skills-title {
+    font-size: 30px;
+}
+
+
+.section-skills-lists {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #969c9a;
+    width: 50%;
+    margin: 50px;
+    padding: 50px;
+    
+}
+
+.rmv-list-style {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 50px;
+    background-color: #d5ebe3;
+
+}
+
+#projects-title {
+    font-size: 30px;
+    margin: 25px 0px;
+
+}
+
+.section-projects-content {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.projects-col {
+    margin: 25px 50px;
+    background-color: #b6b6bd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 2px rebeccapurple;
+    text-align: center;
+}
+
+
+
+.projects-img {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 50px;
+}
+
+.section-projects button {
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.projects-link {
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+.section-contact {
+    margin: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5ebe3;
+}
+
+#contact-title {
+    font-size: 30px;
+}
+
+.contact-form {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 25px
+}
