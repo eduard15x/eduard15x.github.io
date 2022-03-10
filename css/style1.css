@@ -181,14 +181,20 @@ header {
     
 }
 
+
+
+
 .rmv-list-style {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
-
-
+.img-logos {
+    max-width: 75%;
+    border-radius: 10px;
+}
 
 
 .section-projects {
@@ -215,6 +221,7 @@ header {
 }
 
 .projects-col {
+    width: 33%;
     margin: 25px 50px;
     background-color: #b6b6bd;
     border: none;
@@ -266,3 +273,10 @@ header {
     width: 30%;
     font-size: 25px
 }
+
+
+
+
+
+
+
