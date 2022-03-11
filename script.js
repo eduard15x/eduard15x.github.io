@@ -138,12 +138,12 @@ let projectsCreated = [
     {
         'name' : 'Rock Paper Scissors',
         'img' : 'photos/rockpaperscissors.bmp',
-        'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random'
+        'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random.'
     },
     {
         'name' : 'Counter App For Cars',
         'img' : 'photos/parkingcar.bmp',
-        'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random'
+        'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random.'
     },
     {
         'name' : 'Blackjack Game',
@@ -158,16 +158,14 @@ let projectsCreated = [
     {
         'name' : 'Rock Paper Scissors',
         'img' : 'photos/rockpaperscissors.bmp',
+        'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random.'
+    },
+    {
+        'name' : 'Rock Paper Scissors',
+        'img' : 'photos/rockpaperscissors.bmp',
         'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random'
     }
 ];
-
-
-
-
-
-
-
 
 
 
