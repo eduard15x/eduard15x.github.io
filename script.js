@@ -5,7 +5,8 @@ const images = [
     "/photos/picture2.jfif",
     "/photos/picture3.jfif",
     "/photos/picture4.jfif",
-    "/photos/picture5.jfif"
+    "/photos/picture5.jfif",
+    "/photos/picture6.jpg"
 ];
 
 const btnPrev = document.getElementById('btn-prev');
@@ -96,6 +97,11 @@ const logosToLearn = [
         'alt' : 'SQL Database Logo'
     },
     {
+        'name' : 'PHP',
+        'src' : "https://cdn-icons-png.flaticon.com/512/919/919830.png",
+        'alt' : 'PHP Logo'
+    },
+    {
         'name' : 'ReactJS',
         'src' : "https://cdn-icons-png.flaticon.com/512/1260/1260667.png",
         'alt' : 'ReactJS Logo'
@@ -104,7 +110,8 @@ const logosToLearn = [
         'name' : 'NodeJS',
         'src' : "https://cdn-icons-png.flaticon.com/512/919/919825.png",
         'alt' : 'NodeJS Logo'
-    }
+    },
+    
 ];
 
 
@@ -168,9 +175,14 @@ let projectsCreated = [
         'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random.'
     },
     {
-        'name' : 'Rock Paper Scissors',
-        'img' : 'photos/rockpaperscissors.bmp',
-        'description' : 'An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random'
+        'name' : 'Music Player',
+        'img' : 'photos/comingsoon.bmp',
+        'description' : '',
+    },
+    {
+        'name' : 'Hair Salon',
+        'img' : 'photos/comingsoon.bmp',
+        'description' : '',   
     }
 ];
 
@@ -344,3 +356,34 @@ for ( let i = 0; i < logosContact.length; i++) {
 //     }
 // };
 // ocument.getElementById("demo").innerHTML = Object.values(person)[1];
+
+
+
+
+
+
+//display none/flex for the resume
+
+const resumeSection = document.querySelector('.resume-section');
+const displayResume = document.getElementById('navi-resume');
+const closeResume = document.getElementById('close-resume');
+closeResume.style.cursor = 'pointer';
+
+const introBtnResume = document.getElementById('intro-resume-button')
+//add events for nav item and X
+
+displayResume.addEventListener('click', ()=> {
+    resumeSection.style.display = 'flex';
+});
+
+introBtnResume.addEventListener('click', ()=> {
+    resumeSection.style.display = 'flex';
+});
+
+closeResume.addEventListener('click', ()=> {
+    resumeSection.style.display = 'none';
+});
+
+
+
+

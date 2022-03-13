@@ -10,40 +10,34 @@
 </head>
 
 <body>    
+
     <nav class="navbar">
         <div class="home-title">
             <a id="img-a" href="#intro"><img id="my-img-title" src="https://cdn-icons.flaticon.com/png/512/3811/premium/3811736.png?token=exp=1647107966~hmac=c01bb995f324c41e4d3855ffa37d2f0a"></a>
             <p id="name-p"><a href="#intro" id="my-name-title">Eduard Precup</a></p>
         </div>
-
-        
         <ul class="navbar-ul">
             <li><a href="#about-me" class="navi-link">About me</a></li>
             <li><a href="#skills" class="navi-link">Skills</a></li>
             <li><a href="#projects" class="navi-link">Projects</a></li>
             <li><a href="#contact" class="navi-link">Contact</a></li>
-            <li><a href="#resume" class="navi-link">Resume</a></li>
+            <li><a href="#resume" class="navi-link" id="navi-resume">Resume</a></li>
         </ul>
     </nav>
-    
 
+    
     <div class="section-intro" id="intro">
         <div class="section-intro-row section-intro-first-column">
                 <p>Hey, I'm <br><span id="row-two">Eduard</span></p>
                 <p id="row-three">Welcome to my portofolio!</p>
-                <button id="resume-button"><a href="https://files.fm/u/hy3n8vrcm" target="_blank" id="resume-link">Get my resume</a></button>
+                <button id="intro-resume-button"><a id="resume-link">Get resume</a></button>
         </div>
-
-        <img src="/photos/picture6.jpg" id="intro-image" class="section-intro-row">
+        <img src="/photos/developer.jpg" id="intro-image" class="section-intro-row">
     </div>
-
-    
 
 
     <div class="section-about" id="about-me">
-
         <h2 id="section-about-title">About me</h2>
-
         <div class="section-about-content">
             <div class="section-about-one">
                 <p id="animation">
@@ -54,7 +48,6 @@
                     new technologies.
                 </p>
             </div>
-            
             <div class="section-about-two">
                 <img src="" class="photos-me">
                 <div>
@@ -63,21 +56,17 @@
                 </div>
             </div>
         </div>
-        
     </div>
-
 
 
     <div class="section-skills" id="skills">
         <h2 id="section-skills-title">Skills</h2>
-
         <div class="section-skills-lists">
             <h3>What I know at this moment</h3>
-            <ul class="skills-known rmv-list-style">
+            <ul class="skills-known">
                 <!-- javascript added here -->
             </ul>
         </div>
-
         <div class="section-skills-lists">
             <h3>Objectives for near future</h3>
             <ul class="skills-known rmv-list-style">
@@ -85,16 +74,6 @@
             </ul>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="section-projects" id="projects">
@@ -105,8 +84,6 @@
                 <img src="/photos/todolistx.png" class="projects-img">
                 <p>
                     A simple to-do-list created with HTML, CSS and pure JS.
-                    You can insert in your list the tasks you have to do for the current day
-                    and check or remove them.
                 </p>
                 <button><a href="#" class="projects-link">Check it out</a></button>
             </div>
@@ -116,7 +93,6 @@
                 <p>
                     This project is created to register and count the cars entering a private parking
                     and sum the total money for all cars which entered.
-                    Only HTML, CSS and JavaScript (DOM)
                 </p>
                 <button><a href="#" class="projects-link">Check it out</a></button>
             </div>
@@ -125,32 +101,15 @@
                 <img src="/photos/blackjackgame.bmp" class="projects-img">
                 <p>
                     A simple game created with DOM JS.
-                    It's not a Player vs Computer or Player vs Player game, it works
-                    like the real one but you can win/lose only an amount set if you get
-                    the blackjack or you exceed the value.
                 </p>
                 <button><a href="#" class="projects-link">Check it out</a></button>
             </div> -->
         </div>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="section-contact" id="contact">
         <h2 id="contact-title">Contact</h2>
-
         <form class="contact-form">
             <h3 id="form-h3">Send a message</h3>
             <input type="text" placeholder="Enter your first name" class="contact-input">
@@ -160,9 +119,7 @@
             <textarea placeholder="Write your message" class="contact-input form-textarea"></textarea>
             <input type="submit" id="form-submit">
         </form>
-
     </div>
-
 
 
     <footer>
@@ -175,9 +132,77 @@
             <p>&#9993; <a href="mailto: precupeduard99@gmail.com">precupeduard99@gmail.com</a></p>
             <p>&#9990; <a href="tel:+40743224090">+40743224090</a></p>
         </div>
-        
-        
     </footer>
+
+
+
+    <div class="resume-section">
+        <div class="resume-title">
+            <h2>Resume</h2>
+            <p id="close-resume">&#88;</p>
+        </div>
+        
+        <div class="resume-row">
+            <div class="row-list">
+                <h3>Bio</h3>
+                <p>First name: Eduard</p>
+                <p>Last name: Precup</p>
+                <p>Location: Sibiu, Romania</p>
+                <p>Languages: Romanian, English</p>
+            </div>
+    
+            <div class="row-list">
+                <h3>Short Description</h3>
+                <p>Born: 07 - february - 1999</p>
+                <p>Height: 5'9 ft</p>
+                <p>Eyes: Brown</p>
+                <p>Hair: Brown</p>
+            </div>
+        </div>
+
+        <div class="resume-row">
+            <div class="row-list">
+                <h3>Skills</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Bootstrap</p>
+                <p>Github</p>
+            </div>
+
+            <div class="row-list">
+                <h3>Education</h3>
+                <p>High school: 'Octavian Goga' Sibiu</p>
+                <p>University: 'Lucian Blaga' Sibiu</p>
+            </div>
+        </div>
+
+        <div class="resume-row">
+            <div class="row-list">
+                <h3>Hobbies</h3>
+                <p>Sports</p>
+                <p>Traveling</p>
+                <p>Computer games</p>
+                <p>Music</p>
+            </div>
+
+            <div class="row-list">
+                <h3>Favorite Movies</h3>
+                <p>'Django Unchained'</p>
+                <p>'Scarface'</p>
+                <p>'Undisputed'</p>
+                <p>'Interstellar'</p>
+            </div>
+        </div>
+
+        <div class="resume-row resume-download">
+            <button id="downloadCV"><a a href="https://files.fm/u/hy3n8vrcm" target="_blank" >Download CV</a></button>
+        </div>
+    </div>
+
+
+
+
 </body>
 <script src="script.js"></script>
 
