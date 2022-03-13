@@ -277,4 +277,70 @@ for ( let i = 0; i < 3; i++) {
 
 
 
+//creating the section-footer with logos for social media pages
 
+let logosContact = [
+    {
+        'img': 'https://cdn-icons-png.flaticon.com/512/1409/1409946.png',
+        'href': 'https://www.instagram.com/eduard15x/',
+        'alt': 'Instagram Logo'
+    },
+    {
+        'img': 'https://cdn-icons.flaticon.com/png/512/2504/premium/2504903.png?token=exp=1647186810~hmac=8bac3160fb5bc7e49b88f627573974fb',
+        'href': 'https://www.facebook.com/peduard99',
+        'alt': 'Facebook Logo'
+    },
+    {
+        'img': 'https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1647186861~hmac=e3dcc2c688831357d63f56281c254e30',
+        'href': 'https://www.linkedin.com/in/eduard-precup-07z02z99/',
+        'alt': 'Linkedin Logo'
+    },
+    {
+        'img': 'https://cdn-icons.flaticon.com/png/512/3291/premium/3291695.png?token=exp=1647186887~hmac=8f752c8bb7cbfed96aac24ba49779666',
+        'href': 'https://github.com/eduard15x',
+        'alt': 'Github Logo'
+    }
+]
+
+
+const sectionFooter = document.querySelector('.section-footer');
+
+const ulLogosContact = document.createElement('ul');
+ulLogosContact.setAttribute('class', 'ul-contact')
+sectionFooter.appendChild(ulLogosContact);
+
+for ( let i = 0; i < logosContact.length; i++) {
+    const liContact = document.createElement('li');
+    ulLogosContact.appendChild(liContact);
+
+    const linkContact = document.createElement('a');
+    linkContact.href = logosContact[i].href;
+    linkContact.setAttribute('target', '_blank');
+    liContact.appendChild(linkContact);
+
+    const imgContact = document.createElement('img');
+    imgContact.src = logosContact[i].img;
+    imgContact.setAttribute('alt', logosContact[i].alt);
+    imgContact.setAttribute('class', 'img-contact')
+    linkContact.appendChild(imgContact);
+};
+
+
+
+
+
+
+
+
+// //Creating me as an object 
+
+// const eduard = {
+//     'city' : 'Sibiu',
+//     'country' : 'Romania',
+//     'tel' : '+40743224090',
+//     'email' : 'precupeduard99@gmail.com',
+//     'completeLocation' : function() {
+//         return `${this.city}, ${this.country}`;
+//     }
+// };
+// ocument.getElementById("demo").innerHTML = Object.values(person)[1];
