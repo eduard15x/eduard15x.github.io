@@ -47,15 +47,22 @@ const logosKnown = [
         'alt' : 'CSS Logo'
     },
     {
+        'name' : 'Bootstrap 5',
+        'src' : "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+        'alt' : 'Bootstrap5 Logo'
+        
+    },
+    {
         'name' : 'JavaScript',
         'src' : "https://cdn-icons-png.flaticon.com/512/1199/1199124.png",
         'alt' : 'JavaScript Logo'
+       
     },
     {
         'name' : 'GitHub',
         'src' : "https://cdn-icons-png.flaticon.com/512/38/38401.png",
         'alt' : 'GitHub Logo'
-    },
+    }
 ];
 
 
@@ -148,7 +155,7 @@ let projectsCreated = [
     {
         'name' : 'Blackjack Game',
         'img' : 'photos/blackjackgame.bmp',
-        'description' : 'A simple game created with DOM JS. Its not a Player vs Computer or Player vs Player game, it works like the real one but you can win/lose only an amount set if you get the blackjack or you exceed the value.'
+        'description' : 'A simple game created with DOM JS. Its not a Player vs Computer, it works like the real one but you can win/lose only if you get the blackjack or you exceed the value.'
     },
     {
         'name' : 'Password Generator',
@@ -170,42 +177,104 @@ let projectsCreated = [
 
 
 
-for ( let i = 0; i < projectsCreated.length; i++) {
-    const projectsSection = document.querySelector('.section-projects-content');
-    const newProject = document.createElement('div');
-    newProject.setAttribute('class', 'projects-col');
-    projectsSection.appendChild(newProject);
+// for ( let i = 0; i < projectsCreated.length; i++) {
+//     const projectsSection = document.querySelector('.section-projects-content');
+//     const newProject = document.createElement('div');
+//     newProject.setAttribute('class', 'projects-col');
+//     projectsSection.appendChild(newProject);
 
-    let newH4 = document.createElement('h4');
-    newH4.textContent = projectsCreated[i].name;
-    newProject.appendChild(newH4);
+//     let newH4 = document.createElement('h4');
+//     newH4.textContent = projectsCreated[i].name;
+//     newProject.appendChild(newH4);
 
-    const newImg = document.createElement('img');
-    newImg.src = projectsCreated[i].img;
-    newImg.setAttribute('class', 'projects-img');
-    newProject.appendChild(newImg);
+//     const newImg = document.createElement('img');
+//     newImg.src = projectsCreated[i].img;
+//     newImg.setAttribute('class', 'projects-img');
+//     newProject.appendChild(newImg);
 
-    const newDescr = document.createElement('p');
-    newDescr.textContent = projectsCreated[i].description;
-    newProject.appendChild(newDescr);
+//     const newDescr = document.createElement('p');
+//     newDescr.textContent = projectsCreated[i].description;
+//     newProject.appendChild(newDescr);
 
-    const newBtn = document.createElement('button');
-    newBtn.setAttribute('class', 'projects-link');
-    newBtn.textContent = 'Check it out';
-    newProject.appendChild(newBtn);
+//     const newBtn = document.createElement('button');
+//     newBtn.setAttribute('class', 'projects-link');
+//     newBtn.textContent = 'Check it out';
+//     newProject.appendChild(newBtn);
+// }
 
 
+
+//creating the image-slider
+
+const sectionProjects = document.querySelector('.section-projects-content');
+const ulList = document.createElement('ul');
+ulList.setAttribute('class', 'section-projects-ul');
+sectionProjects.appendChild(ulList);
+
+const btnPrevProject = document.createElement('button');
+btnPrevProject.setAttribute('class', 'projects-button');
+btnPrevProject.innerHTML = '&#8249;';
+const btnNextProject = document.createElement('button');
+btnNextProject.setAttribute('class', 'projects-button');
+btnNextProject.innerHTML = '&#8250;'
+
+sectionProjects.prepend(btnPrevProject);
+sectionProjects.appendChild(btnNextProject);
+
+
+for ( let i = 0; i < 3; i++) {
+    const li = document.createElement('li');
+    li.setAttribute('class', 'projects-li-item');
+    ulList.appendChild(li);
+
+    const h4 = document.createElement('h4');
+    h4.setAttribute('class', 'projects-h4')
+    h4.textContent = projectsCreated[i].name;
+
+    const projectImg = document.createElement('img');
+    projectImg.setAttribute('class', 'projects-img');
+    projectImg.src = projectsCreated[i].img;
+    projectImg.setAttribute('alt', 'My project image');
+
+    const shortText = document.createElement('p');
+    shortText.textContent = projectsCreated[i].description;
+
+    li.appendChild(h4);
+    li.appendChild(projectImg);
+    li.appendChild(shortText);
+
+    btnNextProject.addEventListener('click', ()=> {
+        i++;
+        if ( i < projectsCreated.length - 1 ) {
+            btnNextProject.disabled = false;
+            btnPrevProject.disabled = false;
+        } else {
+            btnNextProject.disabled = true;
+        };
+        h4.textContent = projectsCreated[i].name;
+        projectImg.src = projectsCreated[i].img;
+        shortText.textContent = projectsCreated[i].description;
+        
+    });
+    
+    btnPrevProject.disabled = true;
+    btnPrevProject.addEventListener('click', ()=> {
+        i--;
+        if ( i == 2) {
+            btnPrevProject.disabled = true;
+        } else {
+            btnPrevProject.disabled = false;
+            btnNextProject.disabled = false;
+        };
+        
+        h4.textContent = projectsCreated[i].name;
+        projectImg.src = projectsCreated[i].img;
+        shortText.textContent = projectsCreated[i].description;
+    });
 }
 
 
 
-// <div class="projects-col">
-// <h4>To Do List</h4>
-// <img src="/photos/todolistx.png" class="projects-img">
-// <p>
-//     A simple to-do-list created with HTML, CSS and pure JS.
-//     You can insert in your list the tasks you have to do for the current day
-//     and check or remove them.
-// </p>
-// <button><a href="#" class="projects-link">Check it out</a></button>
-// </div>
+
+
+
