@@ -293,22 +293,22 @@ for ( let i = 0; i < 3; i++) {
 
 let logosContact = [
     {
-        'img': 'https://cdn-icons-png.flaticon.com/512/1409/1409946.png',
+        'img': '/photos/insta.png',
         'href': 'https://www.instagram.com/eduard15x/',
         'alt': 'Instagram Logo'
     },
     {
-        'img': 'https://cdn-icons.flaticon.com/png/512/2504/premium/2504903.png?token=exp=1647186810~hmac=8bac3160fb5bc7e49b88f627573974fb',
+        'img': '/photos/facebook.png',
         'href': 'https://www.facebook.com/peduard99',
         'alt': 'Facebook Logo'
     },
     {
-        'img': 'https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1647186861~hmac=e3dcc2c688831357d63f56281c254e30',
+        'img': '/photos/linkedin.png',
         'href': 'https://www.linkedin.com/in/eduard-precup-07z02z99/',
         'alt': 'Linkedin Logo'
     },
     {
-        'img': 'https://cdn-icons.flaticon.com/png/512/3291/premium/3291695.png?token=exp=1647186887~hmac=8f752c8bb7cbfed96aac24ba49779666',
+        'img': '/photos/ghub.png',
         'href': 'https://github.com/eduard15x',
         'alt': 'Github Logo'
     }
