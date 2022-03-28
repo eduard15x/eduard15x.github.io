@@ -4,7 +4,15 @@
 
 <head>
     <title>My portofolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
     <!-- CSS All styles, responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style1.css">
     <!-- Icons -->
 </head>
@@ -13,26 +21,30 @@
 
     <nav class="navbar">
         <div class="home-title">
-            <a id="img-a" href="#intro"><img id="my-img-title" src="/photos/homepage.png"></a>
-            <p id="name-p"><a href="#intro" id="my-name-title">Eduard Precup</a></p>
+            <p class="home-title-link">
+                <a id="link-element" href="#intro">  <i class="fa fa-home"></i>  Eduard Precup</a>
+            </p> 
         </div>
-        <ul class="navbar-ul">
+        <ul class="navbar-ul navbar-burger">
             <li><a href="#about-me" class="navi-link">About me</a></li>
             <li><a href="#skills" class="navi-link">Skills</a></li>
             <li><a href="#projects" class="navi-link">Projects</a></li>
             <li><a href="#contact" class="navi-link">Contact</a></li>
             <li><a href="#resume" class="navi-link" id="navi-resume">Resume</a></li>
         </ul>
+        <div class="menu-burger">
+            <div class="menu-btn-burger"></div>
+        </div>
     </nav>
 
     
     <div class="section-intro" id="intro">
         <div class="section-intro-row section-intro-first-column">
-                <p>Hey, I'm <br><span id="row-two">Eduard</span></p>
-                <p id="row-three">Welcome to my portofolio!</p>
-                <button id="intro-resume-button"><a id="resume-link">Get resume</a></button>
+                <p>Hey there,  <br> I'm <span id="span-color-name"> Eduard</span></p>
+                <p>Nice to meet ya!</p>
+                <p id="greet-p">Welcome to my portofolio!</p>
         </div>
-        <img src="/photos/developer.jpg" id="intro-image" class="section-intro-row">
+        <img src="/photos/studio-photo.jpg" alt="background-photo-with-me" id="intro-image" class="section-intro-row">
     </div>
 
 
@@ -41,18 +53,17 @@
         <div class="section-about-content">
             <div class="section-about-one">
                 <p id="animation">
-                    My name is Precup Eduard and I am communicative, dynamic, determined person with great concentration, I can face new challenges, 
-                    always curious and interested in a continuous professional development.
-                    I am 23 years old and in the last 6 months I have found a passion for the web programming part, starting 
-                    to prepare and learn the basics for the Front-End part myself. So far, I have taken several specialization courses, 
-                    out of a desire to improve myself.
+                    My name is Precup Eduard and I am a dynamic and a determined person, I like to face new challenges, 
+                    I'm always curious and interested in a continuous professional development.<br>
+                    I have found a passion for the web programming part, starting to prepare and learn the basics for the Front-End part by myself.
+                    So far, I have taken several specialization courses, out of a desire to improve myself and made some projects.
                 </p>
             </div>
             <div class="section-about-two">
                 <img src="" class="photos-me">
-                <div>
-                    <button class="btn-change-photo" id="btn-prev">&#8249;</button>
-                    <button class="btn-change-photo" id="btn-next">&#8250;</button>
+                <div class="buttons-container">
+                    <button class="btn-change-photo" id="btn-prev"><</button>
+                    <button class="btn-change-photo" id="btn-next">></button>
                 </div>
             </div>
         </div>
@@ -61,17 +72,20 @@
 
     <div class="section-skills" id="skills">
         <h2 id="section-skills-title">Skills</h2>
-        <div class="section-skills-lists">
-            <h3>What I know at this moment</h3>
-            <ul class="skills-known">
-                <!-- javascript added here -->
-            </ul>
-        </div>
-        <div class="section-skills-lists">
-            <h3>Objectives for near future</h3>
-            <ul class="skills-known rmv-list-style">
-                <!-- javascript added -->
-            </ul>
+
+        <div class="skills-container">
+            <div class="section-skills-lists">
+                <h3>Knowledge with</h3>
+                <ul class="skills-known">
+                    <!-- javascript added here -->
+                </ul>
+            </div>
+            <div class="section-skills-lists">
+                <h3>Plan for near future</h3>
+                <ul class="skills-known">
+                    <!-- javascript added -->
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -79,31 +93,7 @@
     <div class="section-projects" id="projects">
         <h2 id="projects-title">My projects</h2>
         <div class="section-projects-content">
-            <!-- <div class="projects-col">
-                <h4>To Do List</h4>
-                <img src="/photos/todolistx.png" class="projects-img">
-                <p>
-                    A simple to-do-list created with HTML, CSS and pure JS.
-                </p>
-                <button><a href="#" class="projects-link">Check it out</a></button>
-            </div>
-            <div class="projects-col">
-                <h4>Park Cars Counter</h4>
-                <img src="/photos/parkingcar.bmp" class="projects-img">
-                <p>
-                    This project is created to register and count the cars entering a private parking
-                    and sum the total money for all cars which entered.
-                </p>
-                <button><a href="#" class="projects-link">Check it out</a></button>
-            </div>
-            <div class="projects-col">
-                <h4>Blackjack Game</h4>
-                <img src="/photos/blackjackgame.bmp" class="projects-img">
-                <p>
-                    A simple game created with DOM JS.
-                </p>
-                <button><a href="#" class="projects-link">Check it out</a></button>
-            </div> -->
+            <!-- JavaScript -->
         </div>
     </div>
 
@@ -111,7 +101,7 @@
     <div class="section-contact" id="contact">
         <h2 id="contact-title">Contact</h2>
         <form class="contact-form">
-            <h3 id="form-h3">Send a message</h3>
+            <h3 id="form-h3">Send me a message</h3>
             <input type="text" placeholder="Enter your first name" class="contact-input">
             <input type="text" placeholder="Enter your last name" class="contact-input">
             <input type="email" placeholder="Enter your email" class="contact-input">
@@ -196,7 +186,7 @@
         </div>
 
         <div class="resume-row resume-download">
-            <button id="downloadCV"><a a href="https://files.fm/u/hy3n8vrcm" target="_blank" >Download CV</a></button>
+            <button id="downloadCV"><a href="https://files.fm/u/hy3n8vrcm" target="_blank" id="resume-link">Download CV</a></button>
         </div>
     </div>
 
