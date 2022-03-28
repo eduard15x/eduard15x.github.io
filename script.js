@@ -2,10 +2,9 @@
 
 const images = [
     "/photos/picture1.jfif",
-    "/photos/picture2.jfif",
-    "/photos/picture3.jfif",
+    "/photos/picture2.jpg",
     "/photos/picture4.jfif",
-    "/photos/picture5.jfif",
+    "/photos/picture8.jpg",
     "/photos/picture6.jpg"
 ];
 
@@ -61,7 +60,7 @@ const logosKnown = [
     },
     {
         'name' : 'GitHub',
-        'src' : "https://cdn-icons-png.flaticon.com/512/38/38401.png",
+        'src' : "https://cdn-icons.flaticon.com/png/512/2504/premium/2504911.png?token=exp=1648417293~hmac=c16331796d26af7655dbd38ba7aa1370",
         'alt' : 'GitHub Logo'
     }
 ];
@@ -89,28 +88,29 @@ for ( let i = 0; i < logosKnown.length; i++) {
 
 
 
+
 //adding the logos I need to learn to skills-need-to-learn
 const logosToLearn = [
-    {
-        'name' : 'MySQL-Database',
-        'src' : "https://cdn-icons-png.flaticon.com/512/919/919836.png",
-        'alt' : 'SQL Database Logo'
-    },
-    {
-        'name' : 'PHP',
-        'src' : "https://cdn-icons-png.flaticon.com/512/919/919830.png",
-        'alt' : 'PHP Logo'
-    },
     {
         'name' : 'ReactJS',
         'src' : "https://cdn-icons-png.flaticon.com/512/1260/1260667.png",
         'alt' : 'ReactJS Logo'
     },
     {
+        'name' : 'Database',
+        'src' : "https://cdn-icons-png.flaticon.com/512/919/919836.png",
+        'alt' : 'SQL Database Logo'
+    },
+    {
         'name' : 'NodeJS',
         'src' : "https://cdn-icons-png.flaticon.com/512/919/919825.png",
         'alt' : 'NodeJS Logo'
     },
+    {
+        'name' : 'PHP',
+        'src' : "https://cdn-icons-png.flaticon.com/512/919/919830.png",
+        'alt' : 'PHP Logo'
+    }
     
 ];
 
@@ -189,32 +189,6 @@ let projectsCreated = [
 
 
 
-// for ( let i = 0; i < projectsCreated.length; i++) {
-//     const projectsSection = document.querySelector('.section-projects-content');
-//     const newProject = document.createElement('div');
-//     newProject.setAttribute('class', 'projects-col');
-//     projectsSection.appendChild(newProject);
-
-//     let newH4 = document.createElement('h4');
-//     newH4.textContent = projectsCreated[i].name;
-//     newProject.appendChild(newH4);
-
-//     const newImg = document.createElement('img');
-//     newImg.src = projectsCreated[i].img;
-//     newImg.setAttribute('class', 'projects-img');
-//     newProject.appendChild(newImg);
-
-//     const newDescr = document.createElement('p');
-//     newDescr.textContent = projectsCreated[i].description;
-//     newProject.appendChild(newDescr);
-
-//     const newBtn = document.createElement('button');
-//     newBtn.setAttribute('class', 'projects-link');
-//     newBtn.textContent = 'Check it out';
-//     newProject.appendChild(newBtn);
-// }
-
-
 
 //creating the image-slider
 
@@ -225,16 +199,74 @@ sectionProjects.appendChild(ulList);
 
 const btnPrevProject = document.createElement('button');
 btnPrevProject.setAttribute('class', 'projects-button');
-btnPrevProject.innerHTML = '&#8249;';
+btnPrevProject.innerHTML = '<';
 const btnNextProject = document.createElement('button');
 btnNextProject.setAttribute('class', 'projects-button');
-btnNextProject.innerHTML = '&#8250;'
+btnNextProject.innerHTML = '>'
 
 sectionProjects.prepend(btnPrevProject);
 sectionProjects.appendChild(btnNextProject);
 
 
-for ( let i = 0; i < 3; i++) {
+
+
+if (innerWidth > 500) {
+    for ( let i = 0; i < 3; i++) {
+    const li = document.createElement('li');
+    li.setAttribute('class', 'projects-li-item');
+    ulList.appendChild(li);
+
+    const h4 = document.createElement('h4');
+    h4.setAttribute('class', 'projects-h4')
+    h4.textContent = projectsCreated[i].name;
+
+    const projectImg = document.createElement('img');
+    projectImg.setAttribute('class', 'projects-img');
+    projectImg.src = projectsCreated[i].img;
+    projectImg.setAttribute('alt', 'My project image');
+
+    const shortText = document.createElement('p');
+    shortText.textContent = projectsCreated[i].description;
+
+    li.appendChild(h4);
+    li.appendChild(projectImg);
+    li.appendChild(shortText);
+
+    btnNextProject.addEventListener('click', ()=> {
+        i++;
+        if ( i < projectsCreated.length - 1 ) {
+            btnNextProject.disabled = false;
+            btnPrevProject.disabled = false;
+        } else {
+            btnNextProject.disabled = true;
+        };
+        h4.textContent = projectsCreated[i].name;
+        projectImg.src = projectsCreated[i].img;
+        shortText.textContent = projectsCreated[i].description;
+        
+    });
+    
+    btnPrevProject.disabled = true;
+    btnPrevProject.addEventListener('click', ()=> {
+        i--;
+        if ( i == 2) {
+            btnPrevProject.disabled = true;
+        } else {
+            btnPrevProject.disabled = false;
+            btnNextProject.disabled = false;
+        };
+        
+        h4.textContent = projectsCreated[i].name;
+        projectImg.src = projectsCreated[i].img;
+        shortText.textContent = projectsCreated[i].description;
+    });   
+    }
+} else {
+        displayProjects()
+}
+
+function displayProjects() {
+    let i = 0
     const li = document.createElement('li');
     li.setAttribute('class', 'projects-li-item');
     ulList.appendChild(li);
@@ -289,8 +321,9 @@ for ( let i = 0; i < 3; i++) {
 
 
 
-//creating the section-footer with logos for social media pages
 
+
+//creating the section-footer with logos for social media pages
 let logosContact = [
     {
         'img': '/photos/insta.png',
@@ -368,17 +401,12 @@ const resumeSection = document.querySelector('.resume-section');
 const displayResume = document.getElementById('navi-resume');
 const closeResume = document.getElementById('close-resume');
 closeResume.style.cursor = 'pointer';
-
-const introBtnResume = document.getElementById('intro-resume-button')
 //add events for nav item and X
 
 displayResume.addEventListener('click', ()=> {
     resumeSection.style.display = 'flex';
 });
 
-introBtnResume.addEventListener('click', ()=> {
-    resumeSection.style.display = 'flex';
-});
 
 closeResume.addEventListener('click', ()=> {
     resumeSection.style.display = 'none';
@@ -387,3 +415,25 @@ closeResume.addEventListener('click', ()=> {
 
 
 
+
+
+
+//burger button for mobile layout
+
+const menuBtn = document.querySelector('.menu-burger');
+const navbarBurger = document.querySelector('.navbar-burger');
+let menuIsOpen = false;
+
+
+
+menuBtn.addEventListener('click', ()=> {
+    if(!menuIsOpen) {
+        menuBtn.classList.add('open');
+        menuIsOpen = true;
+        navbarBurger.style.display = 'flex';
+    } else {
+        menuBtn.classList.remove('open');
+        menuIsOpen = false;
+        navbarBurger.style.display = 'none';
+    }
+})
