@@ -1,42 +1,47 @@
 [
     {
+        "name" : "eCommerce Website",
+        "img" : "photos/projectEcommerceSite.png",
+        "description" : "A responsive eCommerce Front-End Site, all functionality was created by myself: Vanilla JS + jQuery, JSON file, HTML, CSS."
+    },
+    {
+        "name" : "Slider Movies Spoiler",
+        "img" : "photos/projectSliderMovie.png",
+        "description" : "A responsive and static page with a slider with top 10 western movies by IMBD and their spoilers. Pure JavaScript, HTML, CSS."
+    },
+    {
+        "name" : "Cart Checkout",
+        "img" : "photos/projectCheckoutShoppingList.png",
+        "description" : "A simple cart shopping checkout; HTML, CSS, JS."
+    },
+    {
         "name" : "To Do List",
-        "img" : "photos/todolistx.png",
-        "description" : "A simple to-do-list created with HTML, CSS and pure JS. You can insert in your list the tasks you have to do for the current day and check or remove them."
-    },
-    {
-        "name" : "Rock Paper Scissors",
-        "img" : "photos/rockpaperscissors.bmp",
-        "description" : "An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random."
-    },
-    {
-        "name" : "Counter App For Cars",
-        "img" : "photos/parkingcar.bmp",
-        "description" : "An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random."
-    },
-    {
-        "name" : "Blackjack Game",
-        "img" : "photos/blackjackgame.bmp",
-        "description" : "A simple game created with DOM JS. Its not a Player vs Computer, it works like the real one but you can win/lose only if you get the blackjack or you exceed the value."
+        "img" : "photos/projectToDoList.png",
+        "description" : "A simple to-do-list created with HTML, CSS and pure JS."
     },
     {
         "name" : "Password Generator",
-        "img" : "photos/passwordgenerator.bmp",
-        "description" : "I created an simple app which generates 4 different random passwords containing small and capital letters, numbers and symbols. I used JavaScript for creating it."
+        "img" : "photos/projectPasswordGenerator.png",
+        "description" : "A simple page that generates four random password by clicking the buttom and selecting the length of them; JavaScript, HTML and CSS."
+    },
+    {
+        "name" : "Invoice Generator",
+        "img" : "photos/projectInvoiceGenerator.png",
+        "description" : "A simple page that calculates and create an invoice by adding some facilitis to your book for an apartment in the hotel; JS, HTML and CSS."
     },
     {
         "name" : "Rock Paper Scissors",
-        "img" : "photos/rockpaperscissors.bmp",
-        "description" : "An old game named Rock-Paper-Scissors created with JS. It can be played only local, you need two names and the picks will be generated random."
+        "img" : "photos/projectRPSgame.png",
+        "description" : "This is one of my first projects. An old game named Rock-Paper-Scissors created with JavaScript, HTML and CSS."
     },
     {
         "name" : "Music Player",
-        "img" : "photos/comingsoon.bmp",
+        "img" : "photos/projectComingSoon.png",
         "description" : ""
     },
     {
         "name" : "Hair Salon",
-        "img" : "photos/comingsoon.bmp",
+        "img" : "photos/projectComingSoon.png",
         "description" : ""   
     }
 ]
