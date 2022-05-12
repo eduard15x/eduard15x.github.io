@@ -1,47 +1,66 @@
 [
     {
+        "name" : "Personal Portofolio",
+        "img" : "/images/projects/projectPersonalPortofolio.png",
+        "description" : "I added also my portofolio if you want to check my code on Github",
+        "href" : "https://github.com/eduard15x/eduard15x.github.io"
+    },
+    {
         "name" : "eCommerce Website",
-        "img" : "photos/projectEcommerceSite.png",
-        "description" : "A responsive eCommerce Front-End Site, all functionality was created by myself: Vanilla JS + jQuery, JSON file, HTML, CSS."
+        "img" : "/images/projects/projectEcommerceSite.png",
+        "description" : "A responsive eCommerce Front-End Site, all functionality was created by myself: Vanilla JS + jQuery, JSON, HTML, CSS.",
+        "href" : "https://github.com/eduard15x/OSF-Academy-eCommerce-Frontend-Project"
     },
     {
         "name" : "Slider Movies Spoiler",
-        "img" : "photos/projectSliderMovie.png",
-        "description" : "A responsive and static page with a slider with top 10 western movies by IMBD and their spoilers. Pure JavaScript, HTML, CSS."
+        "img" : "/images/projects/projectSliderMovie.png",
+        "description" : "A responsive and static page with a slider with top 10 western movies by IMBD and their spoilers. Pure JavaScript, HTML, CSS.",
+        "href" : "https://github.com/eduard15x/Slider-Movies-Spoilers"
     },
     {
         "name" : "Cart Checkout",
-        "img" : "photos/projectCheckoutShoppingList.png",
-        "description" : "A simple cart shopping checkout; HTML, CSS, JS."
+        "img" : "/images/projects/projectCheckoutShoppingList.png",
+        "description" : "A simple cart shopping checkout; HTML, CSS, JS. Add/delete products, update total price by total of products and their quantity",
+        "href" : "https://github.com/eduard15x/Checkout-Shopping-List-Test-Interview"
     },
     {
         "name" : "To Do List",
-        "img" : "photos/projectToDoList.png",
-        "description" : "A simple to-do-list created with HTML, CSS and pure JS."
+        "img" : "/images/projects/projectToDoList.png",
+        "description" : "A simple to-do-list created with HTML, CSS and pure JS. Add new tasks/ delete selected taks/ mark tasks",
+        "href" : "https://github.com/eduard15x/A-To-Do-List-Project"
+    },
+    {
+        "name" : "Current Date/Time",
+        "img" : "/images/projects/projectCurrentTime.png",
+        "description" : "A static page that shows every one second the current date and time.",
+        "href" : "https://github.com/eduard15x/Current-date-and-time"
     },
     {
         "name" : "Password Generator",
-        "img" : "photos/projectPasswordGenerator.png",
-        "description" : "A simple page that generates four random password by clicking the buttom and selecting the length of them; JavaScript, HTML and CSS."
+        "img" : "/images/projects/projectPasswordGenerator.png",
+        "description" : "A simple page that generates four random password by clicking the buttom and selecting the length of them; JavaScript, HTML and CSS.",
+        "href" : "https://github.com/eduard15x/Password-Generator"
     },
     {
         "name" : "Invoice Generator",
-        "img" : "photos/projectInvoiceGenerator.png",
-        "description" : "A simple page that calculates and create an invoice by adding some facilitis to your book for an apartment in the hotel; JS, HTML and CSS."
+        "img" : "/images/projects/projectInvoiceGenerator.png",
+        "description" : "A simple page that calculates and create an invoice by adding some facilitis to your book for an apartment in the hotel; JS, HTML and CSS.",
+        "href" : "https://github.com/eduard15x/Invoice-generator"
     },
     {
         "name" : "Rock Paper Scissors",
-        "img" : "photos/projectRPSgame.png",
-        "description" : "This is one of my first projects. An old game named Rock-Paper-Scissors created with JavaScript, HTML and CSS."
+        "img" : "/images/projects/projectRPSgame.png",
+        "description" : "This is one of my first projects. An old game named Rock-Paper-Scissors created with JavaScript, HTML and CSS.",
+        "href" : "https://github.com/eduard15x/Game-Rock-Paper-Scissors"
     },
     {
         "name" : "Music Player",
-        "img" : "photos/projectComingSoon.png",
+        "img" : "/images/projects/projectComingSoon.png",
         "description" : ""
     },
     {
         "name" : "Hair Salon",
-        "img" : "photos/projectComingSoon.png",
+        "img" : "/images/projects/projectComingSoon.png",
         "description" : ""   
     }
 ]

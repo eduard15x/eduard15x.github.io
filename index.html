@@ -1,210 +1,146 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <title>My portofolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a7e6fe19e5.js" crossorigin="anonymous"></script>
-
-    <!-- CSS All styles, responsive layout -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style1.css">
-    <!-- Icons -->
 </head>
 
-<body>    
-
-    <nav class="navbar">
-        <div class="home-title">
-            <p class="home-title-link">
-                <a id="link-element" href="#intro">  <i class="fa fa-home"></i>  Eduard Precup</a>
-            </p> 
-        </div>
-        <ul class="navbar-ul navbar-burger">
-            <li><a href="#about-me" class="navi-link">About me</a></li>
-            <li><a href="#skills" class="navi-link">Skills</a></li>
-            <li><a href="#projects" class="navi-link">Projects</a></li>
-            <li><a href="#contact" class="navi-link">Contact</a></li>
-            <li><a href="#resume" class="navi-link" id="navi-resume">Resume</a></li>
-        </ul>
-        <div class="menu-burger">
-            <div class="menu-btn-burger"></div>
-        </div>
-    </nav>
-
-    
-    <div class="section-intro" id="intro">
-        <div class="section-intro-row section-intro-first-column">
-                <p>Hey there,  <br> I'm <span id="span-color-name"> Eduard</span></p>
-                <p>Nice to meet ya!</p>
-                <p id="greet-p">Welcome to my portofolio!</p>
-        </div>
-        <img src="/photos/studio-photo.jpg" alt="background-photo-with-me" id="intro-image" class="section-intro-row">
-    </div>
 
 
-    <div class="section-about" id="about-me">
-        <h2 id="section-about-title">About me</h2>
-        <div class="section-about-content">
-            <div class="section-about-one">
-                <p id="animation">
-                    My name is Precup Eduard and I am a dynamic and a determined person, I like to face new challenges, 
-                    I'm always curious and interested in a continuous professional development.<br>
-                    I have found a passion for the web programming part, starting to prepare and learn the basics for the Front-End part by myself.
-                    So far, I have taken several specialization courses, out of a desire to improve myself and made some projects.
-                </p>
-            </div>
-            <div class="section-about-two">
-                <img src="" class="photos-me">
-                <div class="buttons-container">
-                    <button class="btn-change-photo" id="btn-prev"><</button>
-                    <button class="btn-change-photo" id="btn-next">></button>
+<body>
+    <header class="header-section">
+        <a href="#home" id="icon-home"> <i class="fa-solid fa-house"></i> </a>
+
+        <nav class="nav-bar-header">
+            <a href="#aboutme"> About me </a>
+            <a href="#projects"> Projects </a>
+            <a href="#skills"> Skills </a>
+            <a href="#contact"> Contact </a>
+            <a id="resume-nav-link"> Resume </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- SECTION ONE -->
+        <section class="section-intro" id="home">
+            <div class="section-intro-welcome">
+                <h1> Hey there,<br> I am <span id="span-name"> Eduard </span>. </h1>
+                <h3 id="h3-greet"> Welcome to my page ! </h3>
+                <div class="intro-icons">
+                    <a href="https://www.linkedin.com/in/eduard-precup-07z02z99/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/eduard15x" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                    <a href="https://www.instagram.com/eduard15x/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/peduard99/" target="_blank"> <i class="fa-brands fa-facebook-square"></i> </a>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <img id="intro-photo" src="/images/me/studio.png">
+        </section>
 
 
-    <div class="section-skills" id="skills">
-        <h2 id="section-skills-title">Skills</h2>
+        <section class="section-aboutme sections-sizing" id="aboutme">
+            <h1 class="sections-titles"> About me </h1>
+            <div class="section-aboutme-cols">
 
-        <div class="skills-container">
-            <div class="section-skills-lists">
-                <h3>I have experience with</h3>
-                <ul class="skills-known">
-                    <!-- javascript added here -->
+                <p class="aboutme-col-one">My name is Precup Eduard and I am a dynamic and a determined person, I like to face new challenges, I'm always curious and interested in a continuous professional development.<br>
+                    I have found a passion for the web programming part, starting to prepare and learn the basics for the Front-End part by myself. So far, I have taken several specialization courses, out of a desire to improve myself and made some projects.
+                </p>
+
+                <div class="section-aboutme-slider">
+                    <img id="aboutme-photo" src="">
+                    <div class="aboutme-arrows">
+                        <i class="fa-solid fa-left-long" id="prevphoto"></i>
+                        <i class="fa-solid fa-right-long" id="nextphoto"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-projects sections-sizing" id="projects">
+            <h1 class="sections-titles"> Personal projects </h1>
+
+            <div>
+                <ul class="projects-list">
+                    <!-- JavaScript -->
+                </ul>
+
+                <div class="projects-arrows">
+                    <i class="fa-solid fa-hand-point-left" id="prev-project"></i>
+                    <i class="fa-solid fa-hand-point-right" id="next-project"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-skills sections-sizing" id="skills">
+            <h1 class="sections-titles"> Skills </h1>
+
+            <div class="skills-slider">
+                <h2> Experienced with </h2>
+                <ul class="skills-list">
+                    <!-- JavaScript -->
                 </ul>
             </div>
-            <div class="section-skills-lists">
-                <h3>Plan for near future</h3>
-                <ul class="skills-known">
-                    <!-- javascript added -->
+            
+            <div class="skills-slider">
+                <h2> Future plans </h2>
+                <ul class="skills-list">
                 </ul>
             </div>
+        </section>
+
+
+
+        <div class="resume-box">
+            <h2 id="title-resume">Do you want to get my resume ?</h2>
+            <div class="buttons-resume">
+                <button id="btn-download-resume">Download</button>
+                <button id="btn-close-resume">Close</button>
+            </div>
+            <i class="fa-solid fa-xmark" id="close-resume-x"></i>
         </div>
-    </div>
+
+    </main>
 
 
-    <div class="section-projects" id="projects">
-        <h2 id="projects-title">My projects</h2>
-        <div class="section-projects-content">
-            <ul class="ul-projects-list">
-                <!-- JavaScript  -->
-            </ul>
+    <footer class="footer-section" id="contact">
+        <h3 id="getintouch"><i class="fa-solid fa-down-long" id="downleft"></i>Get in touch <i class="fa-solid fa-down-long" id="downright"></i></h3>
 
-            <button class="projects-button" id="prevbtn"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="projects-button" id="nextbtn"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="footer-details">
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/eduard-precup-07z02z99/" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn </a>
+                <a href="https://github.com/eduard15x" target="_blank"> <i class="fa-brands fa-github"></i> GitHub </a>
+                <a href="https://www.instagram.com/eduard15x/" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram </a>
+                <a href="https://www.facebook.com/peduard99/" target="_blank"> <i class="fa-brands fa-facebook-square"></i> Facebook </a>
+            </div>
+            <div class="footer-contact">
+                <h4> <i class="fa-solid fa-address-book icon-footer-contact"></i> Contact</h4>
+                <a href="https://www.google.ro/maps/place/Strada+Macaralei,+Sibiu/@45.800327,24.1700008,19.08z/data=!4m5!3m4!1s0x474c67a0542449bb:0x3ee03e18b1610ec7!8m2!3d45.8003499!4d24.1705173?hl=ro" target="_blank"> <i class="fa-solid fa-location-dot icon-footer-contact"> </i>  Sibiu, Romania </a>
+                <a href="mailto: precupeduard99@gmail.com"> <i class="fa-solid fa-envelope icon-footer-contact"></i> precupeduard99@gmail.com</a>
+                <a href="tel:+40743224090"> <i class="fa-solid fa-square-phone icon-footer-contact"></i> +40743224090</a>
+            </div>
         </div>
-    </div>
-
-
-    <div class="section-contact" id="contact">
-        <h2 id="contact-title">Contact</h2>
-        <form class="contact-form">
-            <h3 id="form-h3">Send me a message</h3>
-            <input type="text" placeholder="Enter your first name" class="contact-input">
-            <input type="text" placeholder="Enter your last name" class="contact-input">
-            <input type="email" placeholder="Enter your email" class="contact-input">
-            <input type="text"   placeholder="Enter your phone" class="contact-input">
-            <textarea placeholder="Write your message" class="contact-input form-textarea"></textarea>
-            <input type="submit" id="form-submit">
-        </form>
-    </div>
-
-
-    <footer>
-        <h3 id="contact-h3">Get In Touch &#8681;</h3>
-        <div class="section-footer">
-            <!-- JavaScript is added here -->
-        </div>
-        <div class="info-me">
-            <p>Sibiu, Romania</p>
-            <p>&#9993; <a href="mailto: precupeduard99@gmail.com">precupeduard99@gmail.com</a></p>
-            <p>&#9990; <a href="tel:+40743224090">+40743224090</a></p>
-        </div>
+        
+        <p id="copyright">&copy;  All Rights Reserved</p>
     </footer>
 
 
 
-    <div class="resume-section">
-        <div class="resume-title">
-            <h2>Resume</h2>
-            <p id="close-resume">&#88;</p>
-        </div>
-        
-        <div class="resume-row">
-            <div class="row-list">
-                <h3>Bio</h3>
-                <p>First name: Eduard</p>
-                <p>Last name: Precup</p>
-                <p>Location: Sibiu, Romania</p>
-                <p>Languages: Romanian, English</p>
-            </div>
-    
-            <div class="row-list">
-                <h3>Short Description</h3>
-                <p>Born: 07 - february - 1999</p>
-                <p>Height: 5'9 ft</p>
-                <p>Eyes: Brown</p>
-                <p>Hair: Brown</p>
-            </div>
-        </div>
-
-        <div class="resume-row">
-            <div class="row-list">
-                <h3>Skills</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>Bootstrap</p>
-                <p>Github</p>
-            </div>
-
-            <div class="row-list">
-                <h3>Education</h3>
-                <p>High school: 'Octavian Goga' Sibiu</p>
-                <p>University: 'Lucian Blaga' Sibiu</p>
-            </div>
-        </div>
-
-        <div class="resume-row">
-            <div class="row-list">
-                <h3>Hobbies</h3>
-                <p>Sports</p>
-                <p>Traveling</p>
-                <p>Computer games</p>
-                <p>Music</p>
-            </div>
-
-            <div class="row-list">
-                <h3>Favorite Movies</h3>
-                <p>'Django Unchained'</p>
-                <p>'Scarface'</p>
-                <p>'Undisputed'</p>
-                <p>'Interstellar'</p>
-            </div>
-        </div>
-
-        <div class="resume-row resume-download">
-            <button id="downloadCV"><a href="https://files.fm/u/hy3n8vrcm" target="_blank" id="resume-link">Download CV</a></button>
-        </div>
-    </div>
-
-
-
-
-    <script src="JS files/1.aboutMeSection.js"></script>
-    <script src="JS files/2.mySkillsSection.js"></script>
-    <script src="JS files/3.myProjects.js"></script>
-    <script src="JS files/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/scripts/aboutMe.js"></script>
+    <script src="/scripts/personalProjects.js"></script>
+    <script src="/scripts/mySkills.js"></script>
+    <script src="/scripts/resume.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
-
-
 
 </html>
