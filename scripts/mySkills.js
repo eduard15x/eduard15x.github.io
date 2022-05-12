@@ -76,7 +76,7 @@ const unknownSkills = [
     },
     {
         'name' : 'API',
-        'src' : 'https://cdn-icons.flaticon.com/png/512/1493/premium/1493169.png?token=exp=1652310850~hmac=7849433afa7bb00c595a5d0443119738',
+        'src' : 'https://cdn-icons-png.flaticon.com/512/5958/5958595.png',
         'alt' : 'API logo'
     }
 ];
