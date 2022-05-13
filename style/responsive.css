@@ -1,0 +1,250 @@
+/* Media query for devices with max-width 600px */
+@media only screen and ( max-width: 600px) {
+
+    body {
+        width: 100%;
+        min-width: 300px;
+        background-color: red;
+    }
+
+    .sections-titles {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .sections-sizing {
+        padding: 40px 0px 0px 0px;
+    }
+    
+
+    /* Header Section */
+    .header-section {
+        flex-direction: column;
+        position: fixed;
+        font-size: 12px;
+        height: auto;
+    }
+    #icon-home, #icon-home i {
+        position: fixed;
+        z-index: 2;
+        top: 6px;
+        left: 8px;
+        font-size: 20px;
+        text-align: start;
+    }
+    .nav-bar-header {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+        background-color: var(--main-color);
+        align-items: center;
+        height: 120px;
+    }
+    .nav-bar-header a {
+        width: 30%;
+        margin-bottom: 6px;
+    }
+
+
+    /* Burger menu header */
+    .burger-menu {
+        display: block;
+        position: fixed;
+        top: 6px;
+        right: 8px;
+        font-size: 20px;
+        color: var(--section-color);
+        animation-name: show;
+        animation-duration: 2.5s;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    @keyframes show {
+        0% { opacity: 0 };
+        100% { opacity: 1  };
+    }
+    
+
+    /* Section intro */
+    .section-intro {
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-intro-welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .intro-icons {
+        margin-top: 16px;
+        justify-content: space-between;
+    }
+    #h3-greet {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    #intro-photo {
+        width: 200px;
+        height: auto;
+    }
+    
+
+    /* Section about-me */
+    .section-aboutme-cols {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .aboutme-col-one {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .section-aboutme-slider {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #aboutme-photo {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .aboutme-arrows i {
+        font-size: 14px;
+    }
+    
+
+    /* Section projects */
+    .projects-list {
+        width: 100%;
+    }
+    .li-project {
+        width: 80%;
+    }
+    .li-project a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .li-project h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+        
+    }
+    .li-project p {
+        width: 80%;
+        font-size: 14px;
+        height: 140px;
+    }
+    .projects-img {
+        opacity: 1;
+        height: 180px;
+    }
+    .projects-arrows {
+        bottom: 240px;
+    }
+    .projects-arrows i {
+        font-size: 22px;
+    }
+
+
+    /* Section skills */
+    .section-skills {
+        padding-bottom: 0px;
+    }
+    .skills-slider {
+        margin-bottom: 30px;
+    }
+    .skills-list li {
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        width: 33.3%;
+    }
+    .skills-img-logos {
+        margin: 0px;
+        width: 45%;
+        opacity: 1;
+    }
+
+
+
+    /* Resume Section */
+    .resume-box {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 20px 40px;
+    }
+    #title-resume {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .buttons-resume {
+        width: 100%;
+    }
+    #btn-download-resume, #btn-close-resume {
+        padding: 4px 10px;
+    }
+    #close-resume-x {
+        right: 10px;
+        top: 8px;
+        font-size: 16px;
+    }
+
+
+    /* Footer section  */
+    .footer-section {
+        padding: 25px 0px;
+        text-align: center;
+    }
+    .footer-details {
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 14px;
+    }
+    .footer-icons { 
+        margin-top: 30px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-icons a {
+        width: 17%;
+    }
+    .footer-section a {
+        font-size: 14px;
+        line-height: 200%;
+    }
+    .footer-section i {
+        font-size: 18px;
+    }
+    .span-footer-link {
+        display: none;
+    }
+    #getintouch {
+        margin-bottom: 30px;
+    }
+    #footer-contact-h4 {
+        display: none;
+    }
+    #downleft {
+        display: none;
+    }
+    #downright {
+        display: none;
+    }
+    #copyright {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+/* FINISH --- */
+}
+
+
