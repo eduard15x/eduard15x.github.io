@@ -4,7 +4,7 @@
     body {
         width: 100%;
         min-width: 300px;
-        background-color: red;
+        background-color: var(--header-color);
     }
 
     .sections-titles {
@@ -26,9 +26,9 @@
     #icon-home, #icon-home i {
         position: fixed;
         z-index: 2;
-        top: 6px;
-        left: 8px;
-        font-size: 20px;
+        top: 14px;
+        left: 18px;
+        font-size: 22px;
         text-align: start;
     }
     .nav-bar-header {
@@ -49,9 +49,9 @@
     .burger-menu {
         display: block;
         position: fixed;
-        top: 6px;
-        right: 8px;
-        font-size: 20px;
+        top: 14px;
+        right: 18px;
+        font-size: 22px;
         color: var(--section-color);
         animation-name: show;
         animation-duration: 2.5s;
