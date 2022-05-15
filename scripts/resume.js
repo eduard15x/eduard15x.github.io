@@ -20,7 +20,7 @@ closeResumeX.addEventListener('click', () => {
 
 downloadResumeBtn.addEventListener('click', () => {
     window.open(
-        'https://docdro.id/JoQbMXO',
+        'https://docdro.id/saKuKiD',
         '_blank'
     )
 })
